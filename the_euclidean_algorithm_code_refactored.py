@@ -1,9 +1,22 @@
 
 class Math:
 
-    def find_the_greatest_common_factor(Num1,Num2):# find the greatest common factor between two numbers   
-            
     
+#v, take the first number
+    def take_first_input():
+        Num1=int(input("Enter the first number "))
+        return Num1
+#v, take the second number
+    def take_second_input():
+        Num2=int(input("put the second number "))
+        return Num2
+
+
+
+    def find_the_greatest_common_factor(Num1,Num2):# find the greatest common factor between two numbers   
+    
+
+           
     # v, checks if the input is string if yes will return error with message "The Input Should Be Intger Or Float"
             if isinstance(Num1 , str) or isinstance(Num2, str):
                 raise ValueError("The Input Should Be Intger Or Float")
@@ -31,6 +44,8 @@ this will continue until the remainder equal zero so the other number will be th
 '''
 
 # v, Running the function
-result=Math.find_the_greatest_common_factor(-3, 0)
-        
+
+n1= Math.take_first_input()
+n2=Math.take_second_input()
+result=Math.find_the_greatest_common_factor(n1,n2)
 print(result)
