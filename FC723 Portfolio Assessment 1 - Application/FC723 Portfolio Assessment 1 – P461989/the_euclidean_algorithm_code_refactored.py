@@ -9,7 +9,7 @@ class Math:
     
 #Menu to choose between finding GCD or LCM
     def menu(): # menu to choose options
-        _input=input("If you want to find Greatest Common Divisor enter 1  \nIf you want to find Least Common Multiples enter 2\n ")
+        _input=input("If you want to find Greatest Common Divisor enter 1  \nIf you want to find Least Common Multiples enter 2\n ")# Input message
         n1,n2=Math.take_input()#take the input and assign it to n1 and n2
         if _input == "1" :#  find the GCD option
             result=Math.find_the_greatest_common_factor(n1,n2)# use the function to find the GCD
@@ -47,12 +47,8 @@ class Math:
             
             else: # <, if non of the numbers is zero
             
-                The_remainder=Num1%Num2
-                return Math.find_the_greatest_common_factor(Num2,The_remainder)
-'''
-from line 10 to 13
+                The_remainder=Num1%Num2 
+                return Math.find_the_greatest_common_factor(Num2,The_remainder)#this will continue until the remainder equal zero so the other number will be the greatest common factor following the euclidean algorithm
 
-this will continue until the remainder equal zero so the other number will be the greatest common factor following the euclidean algorithm
-'''
 
 Math.menu()

@@ -49,5 +49,5 @@ def test_find_the_greatest_common_factor(): # Test the GCD
 
 def test_lcm_function():
     # Test the LCM
-    lcm = find_Least_Common_Multible(-6,18)
+    lcm = find_Least_Common_Multible(-6,18)#finding the LCM of -6 and 18
     assert lcm == 18, "The least common multiple of 18 and -6 should be 18"
